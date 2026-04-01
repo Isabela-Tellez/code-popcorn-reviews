@@ -10,7 +10,7 @@ body {
 /* Encabezado */
 /* Estilo para el contenedor principal (Hero) */
 .hero {
-    /* 1. Imagen de fondo (reemplaza 'fondo-limpio.jpg' con tu ruta) */
+    /* 1. Imagen de fondo*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                       url('fondo-blog.jpeg'); 
 
