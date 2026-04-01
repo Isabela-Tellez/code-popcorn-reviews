@@ -1,0 +1,161 @@
+/* Configuración general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+/* Estilo para el contenedor principal (Hero) */
+.hero {
+    /* 1. Imagen de fondo (reemplaza 'fondo-limpio.jpg' con tu ruta) */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('fondo-blog.jpeg'); 
+
+    /* 2. Ajustes de fondo */
+    background-size: cover;       /* Cubre todo el header */
+    background-position: center;   /* Centra el collage */
+    background-repeat: no-repeat; /* No repite */
+
+    /* 3. Dimensiones y centrado de contenido */
+    height: 80vh;                 /* Altura relativa a la pantalla (80% de la altura visual) */
+    display: flex;                /* Activamos flexbox para centrado */
+    justify-content: center;       /* Centra horizontalmente el contenido */
+    align-items: center;          /* Centra verticalmente el contenido */
+    text-align: center;
+    color: white;
+}
+
+/* El truco de legibilidad: 'linear-gradient' */
+/* He añadido una capa negra semitransparente (60% de opacidad) 
+   DIRECTAMENTE sobre la imagen para que el texto blanco resalte 
+   sobre los carteles coloridos. Sin esto, no se leería. */
+
+/* Estilos para el texto */
+.hero-content h1 {
+    font-size: 4.5rem;            /* Título grande y potente */
+    margin: 0;
+    color: #f1c40f;               /* Amarillo palomita */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8); /* Sombra para máxima legibilidad */
+}
+
+.slogan {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #bdc3c7;               /* Un gris elegante */
+    margin-top: 10px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Estilo de las entradas (posts) */
+.post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+    color: #e67e22;
+    margin-top: 0;
+}
+
+.fecha {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+
+/* Estilo específico para las reseñas */
+.post-pelicula {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    
+    /* Esto alinea la imagen y el texto en la misma fila */
+    display: flex;
+    gap: 20px; /* Espacio entre imagen y texto */
+    align-items: start;
+}
+
+.poster {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.info-pelicula h2 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.puntuacion {
+    font-weight: bold;
+    color: #f1c40f; /* Color dorado para las estrellas */
+    margin-bottom: 10px;
+}
+
+.genero {
+    display: inline-block;
+    margin-top: 15px;
+    background: #ecf0f1;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #7f8c8d;
+}
+
+
+.filtros-genero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filtros-genero span {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+}
+
+.tag {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    margin: 5px;
+    transition: background 0.3s ease; /* Para que el cambio de color sea suave */
+}
+
+/* Efecto cuando pasas el mouse por encima */
+.tag:hover {
+    background-color: #2980b9;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.tag:active {
+    background-color: #e67e22; /* Se pone naranja al hacer clic */
+    transform: scale(0.95);    /* Se hace un poquito más pequeño, como un botón real */
+}
